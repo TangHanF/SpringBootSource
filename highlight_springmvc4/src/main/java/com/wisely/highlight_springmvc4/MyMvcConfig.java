@@ -38,9 +38,8 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {// 2
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-
-		registry.addResourceHandler("/assets/**").addResourceLocations(
-				"classpath:/assets/");// 3
+		//静态资源访问支持
+		registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/assets/");// 3
 
 	}
 
